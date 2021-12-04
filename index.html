@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Connect to</title>
+    <link rel="stylesheet" href="./css/w3.css">
+    <script src="https://kit.fontawesome.com/f43e11405a.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    alert("11/1~11/10일까지 강사 신청 기간입니다.");
+
+    function popup(){
+        window.open("index06.html", "서버점검 안내", "width=1000, height=500 scrolbars=no");
+    }
+    </script>
+    <style>
+    body{width: 950px; margin: 0 auto;}
+	*{font-family: "맑은 고딕", Arial, Arial, Helvetica, sans-serif; line-height: 150%;}
+    #mySlides{display:none;}
+    .mySlides{display: none;}
+    .w3-left, .w3-right, .w3-badge {cursor: pointer;}
+    .w3-badge{height: 13px; width: 13px; padding: 0;}
+    .picture01, .picture02{
+        display: flex;
+    }
+    .review{
+        display: flex;
+    }
+    </style>
+</head>
+<body onload="popup()">
+    <header>
+        <br><br>
+        <div class="w3-center">
+            <h1 style="font-weight: bold;"><img src="./images/logo.png" alt="logo" style="width:60px; height:60px; margin-left:15px;">&nbsp;Connect to</h1>
+        </div>
+        <button onclick="location.href='index01.html'" class="w3-button w3-border w3-small w3-display-topright w3-khaki">Log In</button>
+        <button onclick="location.href='geo.html'" class="w3-button w3-border w3-small w3-display-topleft w3-khaki">위치 정보</button>
+        <div class="w3-center">
+            <h5>사람과 미술을 잇다</h5>
+        </div>
+        <br>
+    </header>
+    <nav>
+        <div class="w3-bar w3-khaki">
+            <a href="index05.html" target="_blank" class="w3-bar-item w3-button">About Us</a>
+            <div class="w3-dropdown-hover">
+                <button class="w3-button">강사 목록</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="index02.html" target="_blank" class="w3 bar-item w3-button">수채화</a>
+                    <a href="index02.html" target="_blank" class="w3 bar-item w3-button">오일파스텔</a>
+                    <a href="index02.html" target="_blank" class="w3 bar-item w3-button">유화</a>
+                </div>
+            </div>
+            <a href="index03.html" target="_blank" class="w3-bar-item w3-button">강의 신청</a>
+            <a href="index08.html" target="_blank" class="w3-bar-item w3-button">신청 결과</a>
+            <a href="index04.html" target="_blnak" class="w3-bar-item w3-button">커뮤니티</a>
+        </div>
+    </nav>
+    <br>
+    <section>
+        <div class="w3-content w3-display-container" style="max-width: 1000px;">
+            <img class="mySlides" src="./images/main01.jpg" alt="main01" style="width: 100%;">
+            <img class="mySlides" src="./images/main02.jpg" alt="main02" style="width: 100%;">
+            <img class="mySlides" src="./images/main03.jpg" alt="main03" style="width: 100%;">
+            <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+                <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+              </div>
+            </div>
+        </div>
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+            function currentDiv(n) {
+                showDivs(slideIndex = n);
+            }
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                if(n>x.length){slideIndex=1}
+                if(n<1) {slideIndex = x.length}
+                for(i = 0; i<x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                for(i = 0; i<dots.length; i++){
+                    dots[i].className = dots[i].className.replace("w3-white", "");
+                }
+                x[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += "w3-white";
+            }
+        </script>
+        <div class="w3-container w3-center">
+            <h5>Connect to 강사의 수강생들 작품</h5>
+        </div>
+        <br><br><br>
+        <h3>Connect to 강사 강의</h3>
+        <div class="video">
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/O_ny_gxFHpM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            &nbsp;&nbsp;
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/iCJuj-bKAKw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            &nbsp;&nbsp;
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/LkMeJ533T50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br><br>
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/bySJVX8fCkA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            &nbsp;&nbsp;
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/G5CTiyX97i4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            &nbsp;&nbsp;
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/sPKKUM45Bpg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <br><br><br>
+        <h3>Connect to 강사 수강생 작품</h3>
+        <div class="picture01">
+            <div class="w3-card-4" style="width:33%">
+                <img src="./images/stuphoto01.jpg" alt="stuphoto01" width="313" height="200">
+                <div class="w3-containter w3-center">
+                    <p>김민정 강사 - 최XX 학생</p>
+                </div>
+            </div>
+            &nbsp;
+            <div class="w3-card-4" style="width:33%">
+                <img src="./images/stuphoto03.jpg" alt="stuphoto03" width="313" height="200">
+                <div class="w3-containter w3-center">
+                    <p>정혜진 강사 - 이XX 학생</p>
+                </div>
+            </div>
+            &nbsp;
+            <div class="w3-card-4" style="width:33%">
+                <img src="./images/stuphoto05.jpg" alt="stuphoto05" width="313" height="200">
+                <div class="w3-containter w3-center">
+                    <p>임규리 강사 - 김XX 학생</p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="picture02">
+            <div class="w3-card-4" style="width:33%">
+                <img src="./images/stuphoto02.jpg" alt="stuphoto02" width="313" height="200">
+                <div class="w3-containter w3-center">
+                    <p>손주연 강사 - 옹XX 학생</p>
+                </div>
+            </div>
+            &nbsp;
+            <div class="w3-card-4" style="width:33%">
+                <img src="./images/stuphoto04.jpg" alt="stuphoto04" width="313" height="200">
+                <div class="w3-containter w3-center">
+                    <p>정재현 강사 - 강XX 학생</p>
+                </div>
+            </div>
+            &nbsp;
+            <div class="w3-card-4" style="width:33%">
+                <img src="./images/stuphoto06.jpg" alt="stuphoto06" width="313" height="200">
+                <div class="w3-containter w3-center">
+                    <p>이민형 강사 - 홍XX 학생</p>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <h3>Connect to 강사 학생 후기</h3>
+        <div class="review">
+            <div class="w3-card-4" style="width:33%;">
+                <header class="w3-container w3-khaki">
+                    <h4>손주연 강사(5/5)</h4>
+                </header>
+                <div class="w3-container">
+                    <p> &nbsp;평소 그림에는 관심이 많았으나 제대로 된 수업을 들어본 적이 없어서 그림을 그리지 못했는데 
+                    손주연 강사님 수업을 통해 수채화에 자신감이 생겼어요! 
+                    그리고 질문, 작품 피드백을 요청하면 빠른 답장과 피드백을 주셔서 너무 만족스러웠습니다!! 수채화 배울 예정이면
+                강사님 강의 꼭 들으세요!!! 완전 추천합니다!!!</p>
+                </div>
+                <footer class="w3-container w3-khaki">
+                    <h6>2019년 수강자 김XX</h6>
+                </footer>
+            </div>
+            &nbsp;&nbsp;&nbsp;
+            <div class="w3-card-4" style="width:33%;">
+                <header class="w3-container w3-khaki">
+                    <h4>이지영 강사(4.5/5)</h4>
+                </header>
+                <div class="w3-container">
+                    <p> &nbsp;그림 그리는 법 뿐만 아니라 미술과 관련된 지식까지도 알려주셔서
+                        정말 좋았습니다. 다만 다른 강사분들에 비해 짧은 강의 시청 기간이 살짝 아쉬운 것 같습니다...물론 짧은 강의 시청
+                        기간이 강의를 미루지 않고 듣게 되지만 일을 병행하며 강의를 수강하다보니 많이 빠듯해요...이 점만
+                    개선된다면 정말 좋을 것 같습니다. </p>
+                </div>
+                <footer class="w3-container w3-khaki">
+                    <h6>2020년 수강자 안XX</h6>
+                </footer>
+            </div>
+            &nbsp;&nbsp;&nbsp;
+            <div class="w3-card-4" style="width:33%;">
+                <header class="w3-container w3-khaki">
+                    <h4>박지성 강사(4/5)</h4>
+                </header>
+                    <div class="w3-container">
+                        <p> &nbsp;수채화나 오일 파스텔은 혼자서도 충분히 할 수 있지만 유화는
+                            진입장벽이 좀 높은 것 같아 혼자 시작하려니 무척 부담스러웠어요. 그래서 강사님 강의를
+                            신청했는데 너무 만족스러웠어요!! 강사님께서 아주 쉽게 설명해주시고 질문에 대한 답변도
+                            아주 성실하게 해주셔서 무척 만족스러웠어요~</p>
+                    </div>
+                    <footer class="w3-container w3-khaki">
+                        <h6>2020년 수강자 오XX</h6>
+                    </footer>
+            </div>
+        </div>
+</section>
+    <br><br><br>
+    <footer>
+        <div class="w3-panel w3-padding-16 w3-light-gray">
+            <p>&copy;Connect to</p>
+            <br>
+            &nbsp;고객센터&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Connect to는 미술과 사람을 연결시켜주고자 만들어졌습니다.
+            <br>
+            &nbsp;<i class="fas fa-phone-alt" _mstvisible="2">&nbsp;</i>051-***-&&&&&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;저희는 강사분들이 강의에만 매진할 수 있도록 힘을 쓰겠습니다.
+            <br>
+            &nbsp;오전 10 : 00 ~ 12 : 00
+            <br>
+            &nbsp;오후 1:00 ~ 6:00
+        </div>
+    </footer>
+
+
+        
+
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="./css/w3.css">
+    <script src="https://kit.fontawesome.com/f43e11405a.js" crossorigin="anonymous"></script>
+    <style>
+        body{width: 950px; margin: 0 auto;}
+	*{font-family: "맑은 고딕", Arial, Arial, Helvetica, sans-serif; line-height: 150%;}
+    .mySlides{display:none;}
+    .boxes{
+        display: flex;
+        padding: 30px;
+    }
+    .mention{
+        display: flex;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Connect to</h1>
+        <button onclick="location.href='index01.html'" class="w3-button w3-border w3-small w3-display-topright w3-khaki">Log In</button>
+        <h5>사람과 미술을 잇다</h5>
+    </header>
+    <nav>
+        <div class="w3-bar w3-khaki">
+            <a href="#About_Us" class="w3-bar-item w3-button">About Us</a>
+            <div class="w3-dropdown-hover">
+                <button class="w3-button">강사 목록</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="index02.html" target="_blank" class="w3 bar-item w3-button">수채화</a>
+                    <a href="index02.html" target="_blank" class="w3 bar-item w3-button">오일파스텔</a>
+                    <a href="index02.html" target="_blank" class="w3 bar-item w3-button">유화</a>
+                </div>
+            </div>
+            <a href="index03.html" target="_blank" class="w3-bar-item w3-button">강의 신청</a>
+            <a href="index08.html" target="_blank" class="w3-bar-item w3-button">신청 결과</a>
+            <a href="index04.html" target="_blank" class="w3-bar-item w3-button">커뮤니티</a>
+        </div>
+    </nav>
+    <br>
+    <section>
+    <div id="About_Us">
+        <h2>About Us</h2>
+        <br>
+        <div class="mention">
+            <img src="./images/artist.jpg" alt="artist" style="width:20%">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="w3-panel w3-leftbar" style="width:80%">
+                <p><i class="fa fa-quote-right w3-xxlarge"></i><br>
+                <i class="w3-serif w3-xlarge">모든 위대한 예술가들도 맨 처음에는 아마추어였다.<br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Ralph Waldo Emerson</i></p>
+            </div>
+        </div>
+        <br>
+        <div class="w3-panel w3-card"><p>미국의 시인 랠프 월도 에머슨은 '모든 위대한 예술가들도 맨 처음에는 아마추어였다.'라는 명언을
+            남겼습니다. <br>모든 사람들은 예술가가 될 수 있습니다. 예술가가 되고 싶은 사람들의 첫 걸음을 함께 할 강사님을
+            찾습니다. <br><br><h5 style="font-weight: bold;">Connect to에서는 예술가로 거듭날 누군가의 삶에 한 부분이 될 스승을 모집합니다.</h5></p>
+        </div>
+        <br><br><br>
+        <h3>강의 장면 & 수강생 작품</h3>
+            <div class="w3-content w3-section" style="max-width: 1000px">
+                <img class="mySlides" src="./images/aboutus02.jpg" alt="aboutus02" style="width:100%">
+                <img class="mySlides" src="./images/aboutus01.jpg" alt="aboutus01" style="width:100%">
+                <img class="mySlides" src="./images/aboutus03.jpg" alt="aboutus03" style="width:100%">
+            </div>
+        </div>
+    </div>
+        <script>
+            var myIndex=0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for(i=0; i<x.length; i++){
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if(myIndex>x.length){myIndex =1}
+                x[myIndex-1].style.display="block";
+                setTimeout(carousel,2000);
+            }
+        </script>
+        <br><br><br>
+        <h3>Connect to는 제공합니다</h3>
+        <div class="boxes">
+            <div class="w3-khaki w3-hover-shadow w3-padding-64 w3-center" style="width : 30%">
+                <p>
+                    <h4>1.</h4>
+                    <h5>강사들의 질 높은 강의 준비 보장</h5>
+                </p>
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="w3-khaki w3-hover-shadow w3-padding-64 w3-center" style="width : 30%">
+                <p>
+                    <h4>2.</h4>
+                    <h5>다양한 온라인 클래스와의 연계</h5>
+                </p>
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="w3-khaki w3-hover-shadow w3-padding-64 w3-center" style="width : 30%">
+                <p>
+                    <h4>3.</h4>
+                    <h5>사이트 이용자 간 소통 공간 마련</h5>
+                </p>
+            </div>
+        </div>
+</section>
+<br><br><br>
+<footer>
+    <div class="w3-panel w3-padding-16 w3-light-gray">
+        <p>&copy;Connect to</p>
+        <br>
+        &nbsp;고객센터&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Connect to는 미술과 사람을 연결시켜주고자 만들어졌습니다.
+        <br>
+        &nbsp;<i class="fas fa-phone-alt" _mstvisible="2">&nbsp;</i>051-***-&&&&&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;저희는 강사분들이 강의에만 매진할 수 있도록 힘을 쓰겠습니다.
+        <br>
+        &nbsp;오전 10 : 00 ~ 12 : 00
+        <br>
+        &nbsp;오후 1:00 ~ 6:00
+    </div>
+</footer>
+</body>
+</html>

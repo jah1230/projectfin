@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강사목록</title>
+    <link rel="stylesheet" href="./css/w3.css">
+    <script src="https://kit.fontawesome.com/f43e11405a.js" crossorigin="anonymous"></script>
+    <style>
+        body{width: 950px; margin: 0 auto;}
+	*{font-family: "맑은 고딕", Arial, Arial, Helvetica, sans-serif; line-height: 150%;}
+    #mySlides{display:none;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Connect to</h1>
+        <button onclick="location.href='index01.html'" class="w3-button w3-border w3-small w3-display-topright w3-khaki">Log In</button>
+        <h5>사람과 미술을 잇다</h5>
+    </header>
+    <nav>
+        <div class="w3-bar w3-khaki">
+            <a href="index05.html" target="_blank" class="w3-bar-item w3-button">About Us</a>
+            <div class="w3-dropdown-hover">
+                <button class="w3-button">강사 목록</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="#수채화_목록" class="w3 bar-item w3-button">수채화</a>
+                    <a href="#오일파스텔_목록" class="w3 bar-item w3-button">오일파스텔</a>
+                    <a href="#유화_목록" class="w3 bar-item w3-button">유화</a>
+                </div>
+            </div>
+            <a href="index03.html" target="_blank" class="w3-bar-item w3-button">강의 신청</a>
+            <a href="index08.html" target="_blank" class="w3-bar-item w3-button">신청 결과</a>
+            <a href="index04.html" target="_blank" class="w3-bar-item w3-button">커뮤니티</a>
+        </div>
+    </nav>
+    <br>
+    <section>
+        <article><h3>강사 목록</h3></article>
+        <div id="수채화_목록">
+            <h4>수채화 강의</h4>
+        </div>
+        <table class="w3-table-all w3-card-4">
+            <tr class="w3-khaki">
+                <th>이름</th>
+                <th>이메일</th>
+                <th>대표작</th>
+            </tr>
+            <tr>
+                <td>김민정</td>
+                <td>kmj2234@naver.com</td>
+                <td><img src="./images/photokmj.jpg" alt="photokmj" width=100 height=80 style="cursor:zoom-in"
+                    onclick="document.getElementById('modal01').style.display='block'">
+                    <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;
+                    </span>
+                    <div class="w3-modal-content w3-animate-zoom">
+                        <img src="./images/photokmj.jpg" alt="photokmj" style="width:100%">
+                    </div>
+                </div>
+                </td>
+            </tr>
+            <tr>
+                <td>김민수</td>
+                <td>minsu98@gmail.com</td>
+                <td><img src="./images/photokms.jpg" alt="photokms" width=100 height=80 style="cursor:zoom-in"
+                    onclick="document.getElementById('modal02').style.display='block'">
+                    <div id="modal02" class="w3-modal" onclick="this.style.display='none'">
+                    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;
+                    </span>
+                    <div class="w3-modal-content w3-animate-zoom">
+                        <img src="./images/photokms.jpg" alt="photokms" style="width:100%">
+                    </div>
+                </div>
+                </td>
+            </tr>
+            <tr>
+                <td>손주연</td>
+                <td>juyyyeon483@daum.net</td>
+                <td><img src="./images/photosjy.jpg" alt="photosjy" width=100 height=80 style="cursor:zoom-in"
+                    onclick="document.getElementById('modal03').style.display='block'">
+                    <div id="modal03" class="w3-modal" onclick="this.style.display='none'">
+                        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;
+                        </span>
+                        <div class="w3-modal-content w3-animate-zoom">
+                            <img src="./images/photosjy.jpg" alt="photosjy" style="width:100%">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br><br><br>
+        <div id="오일파스텔_목록">
+            <h4>오일파스텔 강의</h4>
+        </div>
+        <table class="w3-table-all w3-card-4">
+            <tr class="w3-khaki">
+                <th>이름</th>
+                <th>이메일</th>
+                <th>대표작</th>
+            </tr>
+            <tr>
+                <td>정재현</td>
+                <td>jjh38830@naver.com</td>
+                <td><img src="./images/photojjh.jpg" alt="photojjh" width=100 height=80 style="cursor:zoom-in"
+                    onclick="document.getElementById('modal04').style.display='block'">
+                    <div id="modal04" class="w3-modal" onclick="this.style.display='none'">
+                        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;
+                        </span>
+                        <div class="w3-modal-content w3-animate-zoom">
+                            <img src="./images/photojjh.jpg" alt="photojjh" style="width:100%">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>이지영</td>
+                <td>jyl99@naver.com</td>
+                <td><img src="./images/photoljy.jpg" alt="photoljy" width=100 height=80 style="cursor:zoom-in"
+                    onclick="document.getElementById('modal05').style.display='block'">
+                    <div id="modal05" class="w3-modal" onclick="this.style.display='none'">
+                        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;
+                        </span>
+                        <div class="w3-modal-content w3-animate-zoom">
+                            <img src="./images/photoljy.jpg" alt="photoljy" style="width:100%">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>정혜진</td>
+                <td>hjj38@gmail.com</td>
+                <td><img src="./images/photojhj.jpeg" alt="photojhj" width=100 height=80 style="cursor:zoom-in"
+                    onclick="document.getElementById('modal06').style.display='block'">
+                    <div id="modal06" class="w3-modal" onclick="this.style.display='none'">
+                        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;
+                        </span>
+                        <div class="w3-modal-content w3-animate-zoom">
+                            <img src="./images/photojhj.jpeg" alt="photojhj" style="width:100%">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br><br><br>
+        <div id="유화_목록">
+            <h4>유화 강의</h4>
+        </div>
+        <table class="w3-table-all w3-card-4">
+            <tr class="w3-khaki">
+                <th>이름</th>
+                <th>이메일</th>
+                <th>대표작</th>
+            </tr>
+            <tr>
+                <td>임규리</td>
+                <td>lim2883@gmail.com</td>
+                <td><img src="./images/photolgr.jpg" alt="photolgr" width=100 height=80 style="cursor:zoom-in"
+                    onclick="document.getElementById('modal07').style.display='block'">
+                    <div id="modal07" class="w3-modal" onclick="this.style.display='none'">
+                        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;
+                        </span>
+                        <div class="w3-modal-content w3-animate-zoom">
+                            <img src="./images/photolgr.jpg" alt="photolgr" style="width:100%">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>박지성</td>
+                <td>park333@naver.com</td>
+                <td><img src="./images/photopjs.jpg" alt="photopjs" width=100 height=80 style="cursor:zoom-in"
+                    onclick="document.getElementById('modal08').style.display='block'">
+                    <div id="modal08" class="w3-modal" onclick="this.style.display='none'">
+                        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;
+                        </span>
+                        <div class="w3-modal-content w3-animate-zoom">
+                            <img src="./images/photopjs.jpg" alt="photopjs" style="width:100%">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>이민형</td>
+                <td>mk590@gmail.com</td>
+                <td><img src="./images/photolmh.jpg" alt="photolmh" width=100 height=80 style="cursor:zoom-in"
+                    onclick="document.getElementById('modal09').style.display='block'">
+                    <div id="modal09" class="w3-modal" onclick="this.style.display='none'">
+                        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;
+                        </span>
+                        <div class="w3-modal-content w3-animate-zoom">
+                            <img src="./images/photolmh.jpg" alt="photolmh" style="width:100%">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <br><br><br>
+    <footer>
+        <div class="w3-panel w3-padding-16 w3-light-gray">
+            <p>&copy;Connect to</p>
+            <br>
+            &nbsp;고객센터&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Connect to는 미술과 사람을 연결시켜주고자 만들어졌습니다.
+            <br>
+            &nbsp;<i class="fas fa-phone-alt" _mstvisible="2">&nbsp;</i>051-***-&&&&&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;저희는 강사분들이 강의에만 매진할 수 있도록 힘을 쓰겠습니다.
+            <br>
+            &nbsp;오전 10 : 00 ~ 12 : 00
+            <br>
+            &nbsp;오후 1:00 ~ 6:00
+        </div>
+    </footer>
+</body>
+</html>
